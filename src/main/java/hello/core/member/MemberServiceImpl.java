@@ -7,7 +7,7 @@ public class MemberServiceImpl implements MemberService{
     // memberRepository가 구현체를 직접 의존함으로 DIP ㅇ위뱌
 
     public MemberServiceImpl(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
+        this.memberRepository = memberRepository; // 생성자 주입 
     }
 
     @Override
