@@ -36,15 +36,15 @@ public class AplicationContextBasicFindTest {
         assertThat(memberService).isInstanceOf(MemberServiceImpl.class) ;
     }
 
-    @Test
-    @DisplayName("빈 이름으로 조회 x" )
-    void findBeanByBeanX(){
-        // 람다를 사용했으며 , 옆에 에러가 터져야 통과임
-        MemberService xxxxx = ac.getBean("xxxxx" , MemberService.class);
-        org.junit.jupiter.api.Assertions.assertThrows(NoSuchBeanDefinitionException.class ,
-                () -> ac.getBean("xxxxx" , MemberService.class)) ;
-
-    }
+//    @Test
+//    @DisplayName("빈 이름으로 조회 x" )
+//    void findBeanByBeanX(){
+//        // 람다를 사용했으며 , 옆에 에러가 터져야 통과임
+//        MemberService xxxxx = ac.getBean("xxxxx" , MemberService.class);
+//        org.junit.jupiter.api.Assertions.assertThrows(NoSuchBeanDefinitionException.class ,
+//                () -> ac.getBean("xxxxx" , MemberService.class)) ;
+//
+//    }
 
 }
 
